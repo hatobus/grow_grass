@@ -14,18 +14,35 @@ Japanese "otaku" often to use word "草".
 
 ```
    ■   ■   
-■■■■■■■■■■■
+■■■■■■■
    ■   ■   
- ■■■■■■■■■ 
+ ■■■■■■ 
  ■       ■ 
- ■■■■■■■■■ 
+ ■■■■■■ 
  ■       ■ 
- ■■■■■■■■■ 
+ ■■■■■■ 
      ■     
      ■     
-■■■■■■■■■■■
+■■■■■■■
      ■     
      ■     
 ```
 
 This is same as a "LoL".
+
+"grow_grass" command is to realize this one.
+
+## Install
+
+First, You'll move home directory, and git clone this repository.
+
+```
+$ cd ~
+$ git clone https://github.com/hatobus/grow_grass.git
+```
+
+Next, You'll run install.sh
+```
+$ cd grow_glass
+$ sh gpio_establishment.sh
+```
