@@ -1,0 +1,6 @@
+#!/bin/bash
+
+ServoPin = 18
+trap "{ echo 'bye...'; gpio mode 1 output; gpio write 1 0; exit 0; }" EXIT SIGINT SIGTERM
+
+gpio mode 1 pwm
