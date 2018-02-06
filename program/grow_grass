@@ -1,7 +1,10 @@
 #!/bin/bash
 
 ServoPin = 18
-gpio -g mode ServoPin out
+gpio -g mode ServoPin pwm
+
+out_min = 800
+out_max = 2300
 
 function map(){
     # $1 = value
@@ -14,5 +17,6 @@ function map(){
 }
 
 for i in `seq 3`; do
-    gpio -g write ServoPin 
+    gpio -g pwm ServoPin 0
+
 done
